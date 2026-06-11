@@ -1,0 +1,17 @@
+mx\edu\itson\control\presentacion\FrmBloqueadorPC.class
+mx\edu\itson\control\entidades\Reserva.class
+mx\edu\itson\control\negocio\InicializadorDatos.class
+mx\edu\itson\control\presentacion\FrmPanelAdmin.class
+mx\edu\itson\control\entidades\Alumno.class
+mx\edu\itson\control\entidades\Carrera.class
+mx\edu\itson\control\entidades\Software.class
+mx\edu\itson\control\ControlLaboratorios.class
+mx\edu\itson\control\negocio\SeguridadUtil.class
+mx\edu\itson\control\presentacion\FrmKioscoAlumno.class
+mx\edu\itson\control\presentacion\FrmLogin.class
+mx\edu\itson\control\entidades\UnidadAcademica.class
+mx\edu\itson\control\entidades\Computadora.class
+mx\edu\itson\control\entidades\Bloqueo.class
+mx\edu\itson\control\negocio\ValidacionesUtil.class
+mx\edu\itson\control\entidades\CentroLaboratorio.class
+mx\edu\itson\control\entidades\EncargadoLaboratorio.class
