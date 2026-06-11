@@ -1,0 +1,56 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+--no-fonts
+-classpath
+'C:/Users/oscar/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar;C:/Users/oscar/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar;C:/Users/oscar/.m2/repository/org/hibernate/orm/hibernate-core/6.2.7.Final/hibernate-core-6.2.7.Final.jar;C:/Users/oscar/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar;C:/Users/oscar/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar;C:/Users/oscar/.m2/repository/com/github/lgooddatepicker/LGoodDatePicker/11.2.1/LGoodDatePicker-11.2.1.jar;C:/Users/oscar/.m2/repository/org/mindrot/jbcrypt/0.4/jbcrypt-0.4.jar'
+-encoding
+'UTF-8'
+-protected
+--release
+25
+-sourcepath
+'C:/Users/oscar/Documents/NetBeansProjects/ControlLaboratorios/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/oscar/Documents/NetBeansProjects/ControlLaboratorios/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'ControlLaboratorios 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'ControlLaboratorios 1.0-SNAPSHOT API'
+mx.edu.itson.control
+mx.edu.itson.control.entidades
+mx.edu.itson.control.negocio
+mx.edu.itson.control.presentacion
+C:\Users\oscar\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar = 1776382151419
+C:\Users\oscar\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar = 1776382151755
+C:\Users\oscar\.m2\repository\org\hibernate\orm\hibernate-core\6.2.7.Final\hibernate-core-6.2.7.Final.jar = 1781202182943
+C:\Users\oscar\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar = 1781202183167
+C:\Users\oscar\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar = 1781202183094
+C:\Users\oscar\.m2\repository\com\github\lgooddatepicker\LGoodDatePicker\11.2.1\LGoodDatePicker-11.2.1.jar = 1781202183471
+C:\Users\oscar\.m2\repository\org\mindrot\jbcrypt\0.4\jbcrypt-0.4.jar = 1781202183484
+C:\Users\oscar\Documents\NetBeansProjects\ControlLaboratorios\src\main\java = 1781201163421
+C:\Users\oscar\Documents\NetBeansProjects\ControlLaboratorios\target\reports\apidocs\allclasses-index.html = 1781207451794
+C:\Users\oscar\Documents\NetBeansProjects\ControlLaboratorios\target\reports\apidocs\allpackages-index.html = 1781207451798
+C:\Users\oscar\Documents\NetBeansProjects\ControlLaboratorios\target\reports\apidocs\element-list = 1781207451542
+C:\Users\oscar\Documents\NetBeansProjects\ControlLaboratorios\target\reports\apidocs\help-doc.html = 1781207451857
+C:\Users\oscar\Documents\NetBeansProjects\ControlLaboratorios\target\reports\apidocs\index-all.html = 1781207451846
+C:\Users\oscar\Documents\NetBeansProjects\ControlLaboratorios\target\reports\apidocs\index.html = 1781207451763
+C:\Users\oscar\Documents\NetBeansProjects\ControlLaboratorios\target\reports\apidocs\member-search-index.js = 1781207451809
+C:\Users\oscar\Documents\NetBeansProjects\ControlLaboratorios\target\reports\apidocs\module-search-index.js = 1781207451803
+C:\Users\oscar\Documents\NetBeansProjects\ControlLaboratorios\target\reports\apidocs\overview-summary.html = 1781207451852
+C:\Users\oscar\Documents\NetBeansProjects\ControlLaboratorios\target\reports\apidocs\overview-tree.html = 1781207451758
+C:\Users\oscar\Documents\NetBeansProjects\ControlLaboratorios\target\reports\apidocs\package-search-index.js = 1781207451805
+C:\Users\oscar\Documents\NetBeansProjects\ControlLaboratorios\target\reports\apidocs\search.html = 1781207451850
+C:\Users\oscar\Documents\NetBeansProjects\ControlLaboratorios\target\reports\apidocs\serialized-form.html = 1781207451612
+C:\Users\oscar\Documents\NetBeansProjects\ControlLaboratorios\target\reports\apidocs\tag-search-index.js = 1781207451811
+C:\Users\oscar\Documents\NetBeansProjects\ControlLaboratorios\target\reports\apidocs\type-search-index.js = 1781207451807
