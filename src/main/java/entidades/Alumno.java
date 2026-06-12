@@ -69,7 +69,7 @@ public class Alumno {
 
     /**
      * Crea un alumno nuevo con todos sus datos.
-     * * @param idAlumno La matrícula.
+     * @param idAlumno La matrícula.
      * @param nombres Los nombres.
      * @param apellidoPaterno El primer apellido.
      * @param apellidoMaterno El segundo apellido.

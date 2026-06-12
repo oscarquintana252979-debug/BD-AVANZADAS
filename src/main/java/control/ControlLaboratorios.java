@@ -21,7 +21,7 @@ public class ControlLaboratorios {
         
         try {
             em.getTransaction().begin();
-            UnidadAcademica unidad = new UnidadAcademica("Campus Nainari");
+            UnidadAcademica unidad = new UnidadAcademica("1","Campus Nainari");
             em.persist(unidad);
             em.getTransaction().commit();
             System.out.println("Se creo la base de datos y se guardo la unidad: " + unidad.getNombre());

@@ -23,7 +23,7 @@ public class EncargadoLaboratorio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idEncargado")
-    private Integer idEncargado;
+    private String idEncargado;
 
     /** Nombre completo del encargado. */
     @Column(name = "nombre", nullable = false, length = 100)
@@ -37,17 +37,18 @@ public class EncargadoLaboratorio {
     public EncargadoLaboratorio() {}
 
     
-    public EncargadoLaboratorio(String nombre, CentroLaboratorio centroLaboratorio) {
+    public EncargadoLaboratorio(String idEncargado, String nombre, CentroLaboratorio centroLaboratorio) {
+        this.idEncargado = idEncargado;
         this.nombre = nombre;
         this.centroLaboratorio = centroLaboratorio;
     }
     
     /** @return El ID del encargado */
-    public Integer getIdEncargado() {
+    public String getIdEncargado() {
         return idEncargado;
     }
 
-    public void setIdEncargado(Integer idEncargado) {
+    public void setIdEncargado(String idEncargado) {
         this.idEncargado = idEncargado;
     }
     

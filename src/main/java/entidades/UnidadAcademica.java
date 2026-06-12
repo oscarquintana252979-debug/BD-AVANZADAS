@@ -21,7 +21,7 @@ public class UnidadAcademica {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idUnidad")
-    private Integer idUnidad;
+    private String idUnidad;
 
     /** El nombre con el que todos conocen al plantel. */
     @Column(name = "nombre", nullable = false, length = 100)
@@ -30,16 +30,17 @@ public class UnidadAcademica {
     public UnidadAcademica() {}
 
     
-    public UnidadAcademica(String nombre) {
+    public UnidadAcademica(String idUnidad, String nombre) {
+        this.idUnidad = idUnidad;
         this.nombre = nombre;
     }
 
     /** @return ID de la unidad */
-    public Integer getIdUnidad() {
+    public String getIdUnidad() {
         return idUnidad;
     }
 
-    public void setIdUnidad(Integer idUnidad) {
+    public void setIdUnidad(String idUnidad) {
         this.idUnidad = idUnidad;
     }
 

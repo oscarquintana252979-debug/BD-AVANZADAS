@@ -24,7 +24,7 @@ public class Carrera {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idCarrera")
-    private Integer idCarrera;
+    private String idCarrera;
     
     /**
      * Nombre de la carrera.
@@ -36,7 +36,7 @@ public class Carrera {
      * Cantidad de minutos diarios que tienen permitidos los alumnos de esta carrera.
      */
     @Column(name = "limiteDiario", nullable = false)
-    private Integer limiteDiario; 
+    private int limiteDiario; 
     
     /**
      * Constructor por defecto requerido por JPA.
@@ -49,7 +49,8 @@ public class Carrera {
      * * @param nombre El nombre oficial de la carrera.
      * @param limiteDiario El límite de tiempo en minutos permitidos por día.
      */
-    public Carrera(String nombre, Integer limiteDiario) {
+    public Carrera(String idCarrera, String nombre, int limiteDiario) {
+        this.idCarrera = idCarrera;
         this.nombre = nombre;
         this.limiteDiario = limiteDiario;
     }
@@ -58,7 +59,7 @@ public class Carrera {
      * Obtiene el identificador de la carrera.
      * * @return El ID de la carrera.
      */
-    public Integer getIdCarrera() {
+    public String getIdCarrera() {
         return idCarrera;
     }
 
@@ -66,7 +67,7 @@ public class Carrera {
      * Establece el identificador de la carrera.
      * * @param idCarrera El nuevo ID de la carrera.
      */
-    public void setIdCarrera(Integer idCarrera) {
+    public void setIdCarrera(String idCarrera) {
         this.idCarrera = idCarrera;
     }
 
@@ -90,7 +91,7 @@ public class Carrera {
      * Obtiene el límite de tiempo diario asignado a la carrera.
      * * @return Los minutos permitidos por día.
      */
-    public Integer getLimiteDiario() {
+    public int getLimiteDiario() {
         return limiteDiario;
     }
 
@@ -98,7 +99,7 @@ public class Carrera {
      * Establece el límite de tiempo diario para los alumnos de la carrera.
      * * @param limiteDiario La nueva cantidad de minutos permitidos.
      */
-    public void setLimiteDiario(Integer limiteDiario) {
+    public void setLimiteDiario(int limiteDiario) {
         this.limiteDiario = limiteDiario;
     }
 }

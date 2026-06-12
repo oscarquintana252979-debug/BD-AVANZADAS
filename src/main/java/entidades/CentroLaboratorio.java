@@ -26,7 +26,7 @@ public class CentroLaboratorio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idLaboratorio")
-    private Integer idLaboratorio;
+    private String idLaboratorio;
 
     /**
      * Cómo le dicen a la sala (ej. "Laboratorio Cisco").
@@ -67,13 +67,14 @@ public class CentroLaboratorio {
 
     /**
      * Da de alta un laboratorio nuevo.
-     * * @param nombre Nombre de la sala.
+     * @param nombre Nombre de la sala.
      * @param horaInicio Horario de apertura.
      * @param horaCierre Horario de cierre.
      * @param contraseñaMaestra La clave del admin.
      * @param unidadAcademica El campus al que pertenece.
      */
-    public CentroLaboratorio(String nombre, LocalTime horaInicio, LocalTime horaCierre, String contraseñaMaestra, UnidadAcademica unidadAcademica) {
+    public CentroLaboratorio(String idLaboratorio, String nombre, LocalTime horaInicio, LocalTime horaCierre, String contraseñaMaestra, UnidadAcademica unidadAcademica) {
+        this.idLaboratorio = idLaboratorio;
         this.nombre = nombre;
         this.horaInicio = horaInicio;
         this.horaCierre = horaCierre;
@@ -82,12 +83,12 @@ public class CentroLaboratorio {
     }
 
     /** @return El ID de la sala */
-    public Integer getIdLaboratorio() {
+    public String getIdLaboratorio() {
         return idLaboratorio;
     }
 
     /** @param idLaboratorio Nuevo ID */
-    public void setIdLaboratorio(Integer idLaboratorio) {
+    public void setIdLaboratorio(String idLaboratorio) {
         this.idLaboratorio = idLaboratorio;
     }
 

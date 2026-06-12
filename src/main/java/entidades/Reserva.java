@@ -27,7 +27,7 @@ public class Reserva {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idReserva")
-    private Integer idReserva;
+    private String idReserva;
 
     /**
      * La hora exacta en la que el alumno dio clic en "Apartar" desde el sistema.
@@ -69,13 +69,14 @@ public class Reserva {
 
     /**
      * Crea un apartado nuevo con las horas y los datos necesarios.
-     * * @param fechaHoraApartado Cuándo se apartó.
+     * @param fechaHoraApartado Cuándo se apartó.
      * @param fechaHoraInicio Cuándo empezó a usarse.
      * @param fechaHoraFin Cuándo se liberó.
      * @param alumno Quién apartó.
      * @param computadora Qué compu apartó.
      */
-    public Reserva(LocalDateTime fechaHoraApartado, LocalDateTime fechaHoraInicio, LocalDateTime fechaHoraFin, Alumno alumno, Computadora computadora) {
+    public Reserva(String idReserva,LocalDateTime fechaHoraApartado, LocalDateTime fechaHoraInicio, LocalDateTime fechaHoraFin, Alumno alumno, Computadora computadora) {
+        this.idReserva = idReserva;
         this.fechaHoraApartado = fechaHoraApartado;
         this.fechaHoraInicio = fechaHoraInicio;
         this.fechaHoraFin = fechaHoraFin;
@@ -84,12 +85,12 @@ public class Reserva {
     }
 
     /** @return El ID de la reserva */
-    public Integer getIdReserva() {
+    public String getIdReserva() {
         return idReserva;
     }
 
     /** @param idReserva Nuevo ID */
-    public void setIdReserva(Integer idReserva) {
+    public void setIdReserva(String idReserva) {
         this.idReserva = idReserva;
     }
 

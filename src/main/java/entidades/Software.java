@@ -21,7 +21,7 @@ public class Software {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idSoftware")
-    private Integer idSoftware;
+    private String idSoftware;
 
     /** Cómo se llama el programa. */
     @Column(name = "nombre", nullable = false, length = 100)
@@ -33,17 +33,18 @@ public class Software {
 
     public Software() {}
 
-    public Software(String nombre, String version) {
+    public Software(String idSoftware, String nombre, String version) {
+        this.idSoftware = idSoftware;
         this.nombre = nombre;
         this.version = version;
     }
     
     /** @return ID del software */
-    public Integer getIdSoftware() {
+    public String getIdSoftware() {
         return idSoftware;
     }
 
-    public void setIdSoftware(Integer idSoftware) {
+    public void setIdSoftware(String idSoftware) {
         this.idSoftware = idSoftware;
     }
 

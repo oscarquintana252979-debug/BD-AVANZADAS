@@ -26,7 +26,7 @@ public class Bloqueo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idBloqueo")
-    private Integer idBloqueo;
+    private String idBloqueo;
 
     /**
      * La razón por la que bloquearon al alumno (ej. "Estaba jugando Minecraft").
@@ -69,13 +69,14 @@ public class Bloqueo {
 
     /**
      * Crea un registro de bloqueo nuevo.
-     * * @param motivo Por qué lo bloquearon.
+     * @param motivo Por qué lo bloquearon.
      * @param fechaHoraInicio Cuándo empezó.
      * @param fechaHoraFin Cuándo termina.
      * @param alumno A quién bloquearon.
      * @param encargadoLaboratorio Quién lo bloqueó.
      */
-    public Bloqueo(String motivo, LocalDateTime fechaHoraInicio, LocalDateTime fechaHoraFin, Alumno alumno, EncargadoLaboratorio encargadoLaboratorio) {
+    public Bloqueo(String idBloqueo, String motivo, LocalDateTime fechaHoraInicio, LocalDateTime fechaHoraFin, Alumno alumno, EncargadoLaboratorio encargadoLaboratorio) {
+        this.idBloqueo = idBloqueo;
         this.motivo = motivo;
         this.fechaHoraInicio = fechaHoraInicio;
         this.fechaHoraFin = fechaHoraFin;
@@ -84,12 +85,12 @@ public class Bloqueo {
     }
     
     /** @return El ID del bloqueo */
-    public Integer getIdBloqueo() {
+    public String getIdBloqueo() {
         return idBloqueo;
     }
 
     /** @param idBloqueo Nuevo ID */
-    public void setIdBloqueo(Integer idBloqueo) {
+    public void setIdBloqueo(String idBloqueo) {
         this.idBloqueo = idBloqueo;
     }
 

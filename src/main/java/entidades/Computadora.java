@@ -28,13 +28,13 @@ public class Computadora {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idComputadora")
-    private Integer idComputadora;
+    private String idComputadora;
 
     /**
      * El número de máquina que tiene pegado el monitor (ej. Máquina 1, Máquina 2).
      */
     @Column(name = "numeroMaquina", nullable = false)
-    private Integer numeroMaquina;
+    private int numeroMaquina;
 
     /**
      * La dirección IP del equipo. Tiene que ser única para saber exactamente de qué computadora nos hablan.
@@ -80,14 +80,15 @@ public class Computadora {
 
     /**
      * Crea una computadora nueva con su información básica y programas.
-     * * @param numeroMaquina El número de equipo.
+     * @param numeroMaquina El número de equipo.
      * @param direccionIP La IP de la máquina.
      * @param estatus Su estado actual.
      * @param tipo El tipo de usuario de la máquina.
      * @param centroLaboratorio El laboratorio donde está.
      * @param listaSoftware Los programas que tiene instalados.
      */
-    public Computadora(Integer numeroMaquina, String direccionIP, String estatus, String tipo, CentroLaboratorio centroLaboratorio, List<Software> listaSoftware) {
+    public Computadora(String idComputadora, int numeroMaquina, String direccionIP, String estatus, String tipo, CentroLaboratorio centroLaboratorio, List<Software> listaSoftware) {
+        this.idComputadora = idComputadora;
         this.numeroMaquina = numeroMaquina;
         this.direccionIP = direccionIP;
         this.estatus = estatus;
@@ -97,22 +98,22 @@ public class Computadora {
     }
 
     /** @return El ID interno de la computadora */
-    public Integer getIdComputadora() {
+    public String getIdComputadora() {
         return idComputadora;
     }
 
     /** @param idComputadora Nuevo ID */
-    public void setIdComputadora(Integer idComputadora) {
+    public void setIdComputadora() {
         this.idComputadora = idComputadora;
     }
 
     /** @return El número de la máquina */
-    public Integer getNumeroMaquina() {
+    public int getNumeroMaquina() {
         return numeroMaquina;
     }
 
     /** @param numeroMaquina Nuevo número de máquina */
-    public void setNumeroMaquina(Integer numeroMaquina) {
+    public void setNumeroMaquina(int numeroMaquina) {
         this.numeroMaquina = numeroMaquina;
     }
 
