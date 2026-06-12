@@ -4,23 +4,24 @@
  */
 package dto;
 
-
 /**
  *
  * @author le0jx
  */
-public class GuardarAlumnoDto {
+public class EditarAlumnoDto {
     private String nombres;
     private String apellidoPaterno;
     private String apellidoMaterno;
     private String contraseña;
+    private Boolean esInscrito;
     private String idCarrera;
 
-    public GuardarAlumnoDto(String nombres, String apellidoPaterno, String apellidoMaterno, String contraseña, String idCarrera) {
+    public EditarAlumnoDto(String nombres, String apellidoPaterno, String apellidoMaterno, String contraseña, Boolean esInscrito, String idCarrera) {
         this.nombres = nombres;
         this.apellidoPaterno = apellidoPaterno;
         this.apellidoMaterno = apellidoMaterno;
         this.contraseña = contraseña;
+        this.esInscrito = esInscrito;
         this.idCarrera = idCarrera;
     }
 
@@ -56,6 +57,14 @@ public class GuardarAlumnoDto {
         this.contraseña = contraseña;
     }
 
+    public Boolean getEsInscrito() {
+        return esInscrito;
+    }
+
+    public void setEsInscrito(Boolean esInscrito) {
+        this.esInscrito = esInscrito;
+    }
+
     public String getIdCarrera() {
         return idCarrera;
     }
@@ -63,7 +72,6 @@ public class GuardarAlumnoDto {
     public void setIdCarrera(String idCarrera) {
         this.idCarrera = idCarrera;
     }
-    
     
     
 }

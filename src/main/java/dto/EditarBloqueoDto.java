@@ -10,15 +10,17 @@ import java.time.LocalDateTime;
  *
  * @author le0jx
  */
-public class GuardarBloqueoDto {
+public class EditarBloqueoDto {
     private String motivo;
     private LocalDateTime fechaHoraInicio;
+    private LocalDateTime fechaHoraFin;
     private String idAlumno;
     private String idEncargadoLaboratorio;
 
-    public GuardarBloqueoDto(String motivo, LocalDateTime fechaHoraInicio, String idAlumno, String idEncargadoLaboratorio) {
+    public EditarBloqueoDto(String motivo, LocalDateTime fechaHoraInicio, LocalDateTime fechaHoraFin, String idAlumno, String idEncargadoLaboratorio) {
         this.motivo = motivo;
         this.fechaHoraInicio = fechaHoraInicio;
+        this.fechaHoraFin = fechaHoraFin;
         this.idAlumno = idAlumno;
         this.idEncargadoLaboratorio = idEncargadoLaboratorio;
     }
@@ -37,6 +39,14 @@ public class GuardarBloqueoDto {
 
     public void setFechaHoraInicio(LocalDateTime fechaHoraInicio) {
         this.fechaHoraInicio = fechaHoraInicio;
+    }
+
+    public LocalDateTime getFechaHoraFin() {
+        return fechaHoraFin;
+    }
+
+    public void setFechaHoraFin(LocalDateTime fechaHoraFin) {
+        this.fechaHoraFin = fechaHoraFin;
     }
 
     public String getIdAlumno() {

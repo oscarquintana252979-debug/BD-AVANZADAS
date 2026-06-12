@@ -10,14 +10,14 @@ import java.time.LocalTime;
  *
  * @author le0jx
  */
-public class GuardarCentroLaboratorioDto {
+public class EditarCentroLaboratorioDto {
     private String nombre;
     private LocalTime horaInicio;
     private LocalTime horaCierre; 
     private String contraseñaMaestra; 
     private String idUnidadAcademica;
 
-    public GuardarCentroLaboratorioDto(String nombre, LocalTime horaInicio, LocalTime horaCierre, String contraseñaMaestra, String idUnidadAcademica) {
+    public EditarCentroLaboratorioDto(String nombre, LocalTime horaInicio, LocalTime horaCierre, String contraseñaMaestra, String idUnidadAcademica) {
         this.nombre = nombre;
         this.horaInicio = horaInicio;
         this.horaCierre = horaCierre;
