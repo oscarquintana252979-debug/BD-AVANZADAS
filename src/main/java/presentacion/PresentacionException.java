@@ -1,0 +1,8 @@
+package presentacion;
+
+public class PresentacionException extends Exception {
+
+    public PresentacionException(String message) {
+        super(message);
+    }
+}
